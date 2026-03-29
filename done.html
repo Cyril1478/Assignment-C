@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent</title>
+    <style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: lightgray;
+}     
+header{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+} 
+nav ul{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   background: black;
+}
+nav ul li{
+    margin:0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: blue;
+}
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+}
+.success-box{
+    background: white;
+    padding: 50px;
+    width: 450px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+.success-icon{
+    font-size: 60px;
+    color: rgb(5, 250, 5);
+}
+.btn{
+    display: inline-block;
+    padding: 12px 15px;
+    margin-top: 20px;
+    background: rgb(0, 191, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: rgb(91, 91, 255);
+}
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+@media  screen and (max-width:480px) {
+    nav, ul{
+        font-size: small;
+        gap: 0px;
+}
+}
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+     <header>
+        <h1>Welcome to My Personal Profile</h1>
+     </header>
+
+<!-- Navigation Section -->
+     <nav>
+     <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="services.html">My Services</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="gallery.html">My Gallery</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+     </ul>
+     </nav>
+
+<!-- Main Content Section -->
+      <main>
+        <div class="success-box">
+        <div class="success-icon">✔</div>
+        <h2>Message Sent Successfully</h2> 
+        <p>Thank you for contacting us</p>
+        <p>We will respond to you within 24 hours</p>
+        <a href="home.html" class="btn">Back to Home</a>
+      </main>
+
+<!-- Footer Section -->
+      <footer>
+        <p>&copy;2026 My Personal Profile |  All Rights Reserved</p>
+      </footer>
+
+</body>
+</html>

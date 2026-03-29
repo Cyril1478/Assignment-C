@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* width: 100%; */
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: gray;
+    border: 10px solid black;
+    margin: auto;
+    padding: 0.5em;
+    gap: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container img{
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.container>div{
+    background-color: white;
+    border: 8px solid black;
+}
+.container>div:first-child{
+    grid-column: 1/5;
+    position: relative;
+    height: 100px;
+}
+.container>div:first-child img{
+    width: 60px;
+    margin-top: 0px;
+}
+.container>div:first-child ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    gap: 50px;
+    list-style: none;
+    
+}
+.container>div:first-child ul>li>a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+.container>div:first-child ul>li>a:hover{
+    background-color: rgb(196, 184, 184);
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.container>div:nth-child(2){
+    grid-column: 1/4;
+    grid-row: 2/4;
+    position: relative;
+}
+.container>div:nth-child(2) h1{
+    position: absolute;
+    top: 10px;
+    text-decoration: underline;
+    right: 150px;
+    font-weight: bolder;
+}
+.container>div:nth-child(2) .paro{
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    margin-left: 290px;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+    background-color: rgba(110, 155, 105, 0.753);
+    /* padding: 20px; */
+}
+.container>div:nth-child(3){
+    grid-column: 4/5;
+    grid-row: 2/6;
+    padding: 20px;
+    width: 400px;
+}
+.container>div:nth-child(3) input:not(input[type=radio]){
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+.container>div:nth-child(3) select{
+    background-color: lightgrey;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+.container>div:nth-child(3) label{
+    display: block;
+    font-size: large;
+    font-weight: bold;
+    /* margin: 20px 0 10px; */
+}
+.container>div:nth-child(3) input:focus{
+    background-color: lightgray;
+}
+/* .container>div:nth-child(3) select:focus{
+    background-color: lightgray;
+} */
+.container>div:nth-child(3) form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+}
+.container>div:nth-child(3) form div span{
+    display: block;
+    margin-left: 20px;
+}
+.container>div:nth-child(3) a{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.container>div:nth-child(3) a:hover{
+    background-color: rgb(226, 208, 208);
+    color: black;
+    transition: 0.5s ease;
+}
+.container>div:nth-child(3) button{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1em;
+    background-color: gray;
+    color: black;
+    padding: 10px;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.container>div:nth-child(3) button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.container>div:nth-child(4){
+    grid-row: 4/6;
+}
+.container>div:nth-child(5){
+    grid-row: 4/6;
+}
+.container>div:last-child{
+    grid-row: 4/6;
+}
+.box{
+    width: 100%;
+    height: 50vh;
+    /* overflow: hidden; */
+    background-color: purple;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    /* margin-top: 30px; */
+}
+.box i{
+    font-size: 40px;
+    color: white;
+    background-color: purple;
+    margin-top: 0px;
+}
+.box h1{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.box p{
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(255, 237, 237);
+    margin-top: 30px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        display: block;
+    }
+    .container>div{
+        grid-column: 1/4;
+    }
+    .container>div:first-child img{
+        width: 30px;
+    }
+    .container>div:first-child ul{
+        gap: 7px;
+        margin-top: -25px;
+        margin-left: 30px;
+    }
+    .container>div:first-child li{
+        font-weight: lighter;
+        font-size: xx-small;
+        padding: 0.1em;
+    }
+    .container>div:nth-child(2) .mine{
+        font-size: small;
+        margin-top: -10px;
+        margin-right: 35px;
+    }
+    .container>div:nth-child(2) img, p{
+        display: none;
+    }
+    .container>div:nth-child(3){
+        width: 100%;
+    }
+    .container>div:nth-child(4) img{
+        display: none;
+    }
+    .container>div:nth-child(5) img{
+        display: none;
+    }
+    .container>div:nth-child(6) img{
+        display: none;
+    }
+}
+
+@media screen and ((min-width:480px) and (max-width:760px)){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container>div:first-child ul{
+        margin-left: 70px;
+    }
+    .container>div:nth-child(2){
+        grid-column: 2/5;
+        grid-row: 2/6;
+    }
+    .container>div:nth-child(2) img{
+        width: 90px;
+        margin-left: 120px;
+    }
+    .container>div:nth-child(2) h1{
+        margin-top: 120px;
+        margin-left: 60px;
+    }
+    .container>div:nth-child(2) p{
+        width: 300px;
+        margin-right: 10px;
+        margin-top: 160px;
+    }
+    .container>div:nth-child(3){
+        width: 100%;
+        grid-column: 1/2;
+    }
+    .container>div:nth-child(4){
+        grid-column: 1/5;
+        grid-row: 6/7;
+    }
+    .container>div:nth-child(4) img{
+        display: none;
+    }
+    .container>div:nth-child(5){
+        grid-column: 1/5;
+        grid-row: 7/8;
+    }
+    .container>div:nth-child(5) img{
+        display: none;
+    }
+    .container>div:nth-child(6){
+        grid-column: 1/5;
+        grid-row: 8/9;
+    }
+    .container>div:nth-child(6) img{
+        display: none;
+    }
+}
